@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Transportes</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; }
+        nav { background: #2c3e50; color: white; padding: 15px; display: flex; gap: 20px; justify-content: center; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 10px; border-radius: 4px; }
+        nav a:hover { background: #34495e; }
+        iframe { flex-grow: 1; border: none; width: 100%; }
+        .active { border-bottom: 2px solid #ecf0f1; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="active">Mapa de Calor Sinistros</a>
+    <a href="rota_4415.html">📍 Rota 4415</a>
+    <a href="rota_7358.html">📍 Rota 7358</a>
+</nav>
+
+<iframe src="df_sinistros_mapa_calor"></iframe>
+
+</body>
+</html>
